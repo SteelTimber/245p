@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+/* Style the header */
+header {
+  background-color: #FF0000;
+  padding: 50px 25px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+  
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 25px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  white-space: nowrap
+}
+
+nav ul li {
+  padding: 15px 5px;
+}
+nav ul li a {
+  font-weight: bold;
+  text-decoration: none;
+}
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  padding: 10px;
+}
+div{
+  background: silver;
+}
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+/* Style the three titles */
+.left-column h1,
+.middle-column h1,
+.right-column h1 {
+ text-align: center;
+ font-size: 25px;
+ ;
+}
+
+h1 {
+  color: gold; 
+}
+
+p {
+  color: #FF5722; 
+  
+}
+
+
+</style>
+</head>
+<body>
+<header>
+  <h2>TESLA</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://www.tesla.com/model3">Model 3</a></li>
+      <li><a href="https://www.tesla.com/modely">Model Y</a></li>
+	  <li><a href="https://www.tesla.com/models">Model S</a></li>
+      <li><a href="https://www.tesla.com/modely">Model X</a></li>
+    </ul>
+	
+  </nav>
+  <div class="left-column">
+	<article>
+		<h1>Model 3</h1>
+		<p>Tesla, Inc. was founded in 2003 by a group of engineers who wanted to prove that people didn't need to compromise to drive electric.</p>
+		<p>Tesla, Inc. was founded in 2003 by a group of engineers who wanted to prove that people didn't need to compromise to drive electric.</p>
+	</article>
+  </div>
+  <div class="middle-column">
+	<article>
+		<h1>Model S</h1>
+		<p>Introduced in 2012, the Model S has set the benchmark for electric vehicles with its unparalleled performance and elegant design.</p>
+		<p>Introduced in 2012, the Model S has set the benchmark for electric vehicles with its unparalleled performance and elegant design.</p>
+	</article>
+  </div>
+  <div class="right-column">
+	<article>
+		<h1>Model X</h1>
+		<p>Model X is the safest, quickest, and most capable sport utility vehicle in history, with standard all-wheel drive and a 100 kWh battery providing 295 miles of range.</p>
+		<p>Model X is the safest, quickest, and most capable sport utility vehicle in history, with standard all-wheel drive and a 100 kWh battery providing 295 miles of range.</p>
+		
+	</article>
+   </div>
+</section>
+
+<footer>
+  <p>By <a href="https://github.com/mtkbaby/245p.git" target="_blank">Tony Min</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="mystyle.css" />
+  </head>
+  <body>
+	<div id="content">Hello World</div>
+	
+	<!-- <button onclick="changeColor()">Click me</button>
+		<script>
+		function changeColor() {
+		  document.getElementById('content').style.color = 'blue';
+		}
+		</script> -->
+
+	<button onclick="updateContent()">Click me</button>
+		<script>
+		function updateContent() {
+		  document.getElementById('content').innerHTML = 'Bye-Bye World';
+		}
+		</script>
+  </body>
+</html>

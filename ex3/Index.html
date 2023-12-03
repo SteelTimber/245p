@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>HTML5 Layout</title>
+ <style type="text/css">
+ header, section, footer, aside, nav, article, figure, figcaption {
+ display: block;}
+ body {
+ color: #666666;
+ background-color: #f9f8f6;
+ background-image: url("images/dark-wood.jpg");
+ background-position: center;
+ font-family: Georgia, times, serif;
+ line-height: 1.4em;
+ margin: 0px;}
+ .wrapper {
+ width: 940px;
+ margin: 20px auto 20px auto;
+ border: 2px solid #000000;
+ background-color: #ffffff;}
+ header {
+ height: 160px;
+ background-image: url(images/Logo.png);}
+ h1 {
+ text-indent: -9999px;
+ width: 940px;
+ height: 130px;
+ margin: 0px;}
+ nav, footer {
+ clear: both;
+ color: #ffffff;
+ background-color: #aeaca8;
+ height: 30px;}
+ nav ul {
+ margin: 0px;
+ padding: 5px 0px 5px 30px;}
+ nav li {
+ display: inline;
+ margin-right: 40px;}
+ nav li a {
+ color: #ffffff;}
+ nav li a:hover, nav li a.current {
+ color: #000000;}
+ section.courses {
+ float: left;
+ width: 680px;
+ }
+ article {
+ clear: both;
+ overflow: auto;
+ width: 100%;}
+ hgroup {
+ margin-top:40px;}
+ figure {
+ float: left;
+ width: 290px;
+ height: 220px;
+ padding: 5px;
+ margin: 20px;
+ }
+ img{width: 290px;
+ height: 220px;}
+ figcaption {
+ font-size: 90%;
+ text-align: left;}
+ aside {
+ width: 230px;
+ float: left;
+ padding: 0px 0px 0px 20px;}
+ aside section a {
+ display: block;
+ padding: 10px;
+ border-bottom: 1px solid #eeeeee;}
+ aside section a:hover {
+ color: #985d6a;
+ background-color: #efefef;}
+ a {
+ color: #de6581;
+ text-decoration: none;}
+ h1, h2, h3 {
+ font-weight: normal;}
+ h2 { 
+ margin: 10px 0px 5px 0px;
+ padding: 0px;}
+ h3 {
+ margin: 0px 0px 10px 0px;
+ color: #de6581;}
+ aside h2 {
+ padding: 30px 0px 10px 0px;
+ color: #de6581;}
+ footer {
+ font-size: 80%;
+ padding: 7px 0px 0px 20px;}
+ </style>
+ <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+ </head>
+ <body>
+ <div class="wrapper">
+ <header>
+ <h1>Yoko's Kitchen</h1>
+ <nav>
+ <ul>
+ <li><a href="" class="current">HOME</a></li>
+ <li><a href="">Vehicles</a></li>
+ <li><a href="">Energy</a></li>
+ <li><a href="">Charging</a></li>
+ <li><a href="">Shop</a></li>
+ </ul>
+ </nav>
+ </header>
+ <aside>
+    <section class="popular-recipes">
+    <h2>Dashboard</h2>
+    <a href="">Profile Settings</a>
+    <a href="">Payment Method</a>
+    <a href="">Order History</a>
+    <a href="">Refer and Earn</a>
+    </section>
+    <section class="contact-details">
+    <h2>Contact Us</h2>
+    <p>Orange Tree Square Shopping Center<br />
+    Walnut Ave<br />
+    Irvine, CA</p>
+    </section>
+    </aside>
+ <section class="courses">
+ <article>
+ <figure>
+ <img src="images/Truck.png" alt="Truck" />
+ </figure>
+ <hgroup>
+ <h2>Tesla Cybertruck</h2>
+ <h3>Your Cybertruck is Reserved</h3>
+ </hgroup>
+ <p>You will be notified to complete your Cybertruck configuration as production nears</p>
+ </article>
+ <article>
+ <figure>
+ <img src="images/Solar.png" alt="Solar Panel" />
+ </figure>
+ <hgroup>
+ <h2>Tesla Solar</h2>
+ <h3>Power Everything</h3>
+ </hgroup>
+ 
+ </article>
+ </section>
+ 
+ <footer>
+ Tony Min
+ </footer>
+ </div><!-- .wrapper -->
+ </body>
+</html>
